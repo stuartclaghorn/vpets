@@ -34,8 +34,6 @@ var GameState = {
 
 	// set the background
 	this.background = this.game.add.sprite(0, 0, 'backyard');
-	this.background.inputEnabled = true;
-	this.background.events.onInputDown.add(this.placeItem, this);
 
 	// Pet
 	// add the pet - set its anchor to its midpoint
@@ -81,7 +79,7 @@ var GameState = {
 	this.rotate.anchor.setTo(0.5);
 	this.rotate.inputEnabled = true;
 
-	this.rotate.events.onInputDown.add(this.rotatePet, this);   
+	this.rotate.events.onInputDown.add(this.rotatePet, this);   keep this commented out until we add rotatePet()
 
 	this.buttons = [this.apple, this.candy, this.toy, this.rotate];
 

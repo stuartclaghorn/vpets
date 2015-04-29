@@ -34,8 +34,6 @@ var GameState = {
 
 	// set the background
 	this.background = this.game.add.sprite(0, 0, 'backyard');
-	this.background.inputEnabled = true;
-	this.background.events.onInputDown.add(this.placeItem, this);
 
 	// Pet
 	// add the pet - set its anchor to its midpoint
